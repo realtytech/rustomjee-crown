@@ -29,11 +29,6 @@ header img{
   margin: auto;
 }
 
-.carousel__item img {
-	width: 100%;
-	max-width: 100vw;
-	vertical-align: middle;
-  }
 /* Hide the images by default */
 .mySlides {
   display: none;

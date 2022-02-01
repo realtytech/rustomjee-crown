@@ -211,16 +211,9 @@ hr{
 /* Carousel CSS Do not Touch*/
 
 /** * Carousel.sass * @author: Dang Van Thanh * @github: https://github.com/dangvanthanh/carousel.sass * @description: A Simple Carousel Pure CSS Using Sass * @version: 1.0.0 */
-.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(7), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2),
-.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3),
-.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), 
-.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), 
-.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6),
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7),
-.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(1)
-{
-    opacity: 1 !important;
-    z-index: 3;
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
+	opacity: 1 !important;
+	z-index: 3;
   }
   *, *:before, *:after {
 	box-sizing: border-box;
@@ -289,29 +282,13 @@ hr{
 	cursor: default;
 	pointer-events: none;
   }
-  .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
-	opacity: 1;
-  }
-  .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
-	background: #ccc;
-	cursor: default;
-	pointer-events: none;
-  }
-  .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) {
-	opacity: 1;
-  }
-  .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
-	background: #ccc;
-	cursor: default;
-	pointer-events: none;
-  }
   .carousel__items {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	width: 100%;
 	max-width: 90vw;
-	height: 400px;
+	height: 600px;
 	max-height: 80vw;
 	position: relative;
   }
@@ -331,19 +308,6 @@ hr{
 	max-width: 90vw;
 	vertical-align: middle;
   }
-  .carousel__item .text {
-	  position: relative;
-	margin-top: -60px;
-  }
-  .carousel__item .subtext {
-	position: absolute;
-  margin-top: 10px;
-  right: 10px;
-  font-weight: 0;
-  font-size: 4pt;
-  color: #eee;
-  /* left: 400px; */
-}
   .carousel__prev > label, .carousel__next > label {
 	border: 1px solid #fff;
 	border-radius: 50%;
